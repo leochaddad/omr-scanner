@@ -1,5 +1,5 @@
 from array import array
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from process_img import process_img
 import numpy as np
 
