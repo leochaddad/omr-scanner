@@ -20,7 +20,7 @@ def process():
         # convert the image to a numpy array
         img = np.frombuffer(img.read(), dtype=np.uint8)
         
-        result = process_img(img)
+        image_b64, answers  = process_img(img)
        
-        return {"result": result}
+        return {"image_b64": image_b64, "answers": answers }
       

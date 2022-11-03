@@ -201,7 +201,7 @@ def process_img(image):
     retval, buffer = cv2.imencode('.jpg', numbered, [int(cv2.IMWRITE_JPEG_QUALITY), 75])
     jpg_as_text = str(base64.b64encode(buffer))
 
-    return "data:image/jpeg;base64," + jpg_as_text[2:-1]
+    return ("data:image/jpeg;base64," + jpg_as_text[2:-1], answers)
 
 
 

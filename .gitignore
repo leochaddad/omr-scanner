@@ -17,5 +17,7 @@ build/
 .idea/
 docs/_build/
 .vscode
+.document.png
+
 
 __pycache__/
