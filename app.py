@@ -2,9 +2,10 @@ from array import array
 from flask import Flask, request, jsonify
 from process_img import process_img
 import numpy as np
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # should get an image sent in the body of the request
 # and return the processed image
